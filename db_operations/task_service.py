@@ -1,8 +1,13 @@
 
-from task_back.task_dto import TaskDTo
-from .db_sevice import SqlContext
-from .models import Task
-from .validators import Validators
+from application.task.task_dto import TaskDTo
+# from dddpocdjango.db_operations.db_sevice import SqlContext
+# from dddpocdjango.task.models import Task
+# from dddpocdjango.task.validators import Validators
+from db_operations.db_sevice import SqlContext
+from task.models import Task
+
+from task.validators import Validators
+
 
 class TaskS:
     def __init__(self,sqlContext:SqlContext,model:Task,validators:Validators) -> None:

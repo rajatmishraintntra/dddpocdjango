@@ -1,14 +1,11 @@
-from django.http import HttpResponse
-from .task_service import TaskS
-from task_back.task_dto import TaskDTo
-from .inject import obj_graph
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from rest_framework import status
-import json
 
 
 # Create your views here.
+from application.task.task_dto import TaskDTo
+from db_operations.task_service import TaskS
+from repository.inject import obj_graph
 
 
 @api_view(['GET', 'POST'])

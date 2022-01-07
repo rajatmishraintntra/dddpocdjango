@@ -1,4 +1,8 @@
-from task_back.task_dto import TaskDTo,TaskDToGet
+# from task_back.task_dto import TaskDTo,TaskDToGet
+from application.task.task_dto import TaskDTo
+
+from application.task.task_dto import TaskDToGet
+
 
 class SqlContext(object):
     def create(self,model:object)->TaskDTo:

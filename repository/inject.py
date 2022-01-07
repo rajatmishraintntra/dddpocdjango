@@ -1,8 +1,13 @@
 import pinject
-from .db_sevice import SqlContext
-from .models import Task
-from .validators import Validators
+# from dddpocdjango.db_operations.db_sevice import SqlContext
+# from dddpocdjango.task.models import Task
+# from dddpocdjango.task.validators import Validators
 # Create your views here.
+from db_operations.db_sevice import SqlContext
+from task.models import Task
+
+from task.validators import Validators
+
 
 class MyBindingSpec(pinject.BindingSpec):
     def configure(self, bind):
