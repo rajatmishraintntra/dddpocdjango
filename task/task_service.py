@@ -17,3 +17,7 @@ class TaskS:
             else:
                 setattr(self.model,k,v)
         return self.sql.create(self.model)
+
+    def task_list(self):
+        model = self.model._meta.model
+        return self.sql.get_list(model)

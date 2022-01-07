@@ -1,3 +1,4 @@
 django
 pinject
 pydantic
+rest_framework
